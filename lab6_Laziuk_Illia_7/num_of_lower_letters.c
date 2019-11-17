@@ -4,7 +4,7 @@
 int main(void){
   char* str;
   printf("Enter your string\n");
-  gets(str);
+  scanf("%s", str);
   char* pch = strtok(str, ".");
   int count = 0;
   for(int i = 0; pch[i] != '\0'; i++){

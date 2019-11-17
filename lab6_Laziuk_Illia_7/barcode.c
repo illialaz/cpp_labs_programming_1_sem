@@ -19,7 +19,7 @@ int main(void){
   while(!c){
     printf("Enter your barcode and the program will check if this code is true.\n"); 
     printf("Barcode should consists of 13 numbers\n");
-    gets(barcode);
+    scanf("%s", barcode);
     if(strlen(barcode) == 13){
         for(int i = 0; barcode[i] != '\0'; i++){
             if(barcode[i] < '0' || barcode[i] > '9'){ 

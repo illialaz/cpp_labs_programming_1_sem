@@ -8,7 +8,7 @@ int main(void){
   int i, nWords = 0;
   printf("This program counts the number of entries of each word in a string\n");
   printf("Enter your string\n");
-  gets(str);
+  scanf("%s", str);
   char* word = strtok(str, separators);
   while(word != NULL){
     for(i = 0; i < nWords; i++){
