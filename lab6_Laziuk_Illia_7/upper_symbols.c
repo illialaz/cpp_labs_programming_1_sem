@@ -3,7 +3,7 @@
 
 int main(){
   char* str;
-  scamf("%s", str);
+  scanf("%s", str);
   for(int i = 0; str[i] != '\0'; i++){
     str[i] = toupper(str[i]);
   }
