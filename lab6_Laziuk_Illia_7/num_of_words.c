@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void){
   char words[50][20];
@@ -8,7 +9,7 @@ int main(void){
   int i, nWords = 0;
   printf("This program counts the number of entries of each word in a string\n");
   printf("Enter your string\n");
-  scanf("%s", str);
+  gets(str);
   char* word = strtok(str, separators);
   while(word != NULL){
     for(i = 0; i < nWords; i++){
@@ -27,7 +28,7 @@ int main(void){
     word = strtok(NULL, separators);
   }
   for(i = 0; i < nWords; i++){
-    printf("The word \"%s\" occur in your string %d times\n", &words[i], counts[i]);
+    printf("The word \"%s\" occur in your string %d times\n", words[i], counts[i]);
     }
   return 0;
 }

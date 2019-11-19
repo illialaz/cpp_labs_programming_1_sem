@@ -4,11 +4,15 @@
 int main(void){
   char* str;
   printf("Enter your string\n");
-  scanf("%s", str);
+  gets(str);
   char* pch = strtok(str, ".");
   int count = 0;
   for(int i = 0; pch[i] != '\0'; i++){
-    if(pch[i] > 'a' && pch[i] < 'z'){
+    printf("%c", pch[i]);
+  }
+  printf("\n");
+  for(int i = 0; pch[i] != '\0'; i++){
+    if(pch[i] >= 'a' && pch[i] <= 'z'){
       count++;
     }
   }
