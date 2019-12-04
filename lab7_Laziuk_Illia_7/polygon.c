@@ -3,7 +3,7 @@
 // 2, if the polygon is in the second quarter
 // 3, if the polygon is in the third quarter
 // 4, if the polygon is in the forth quarter
-// 5, if the polygon is in the fifth quarter
+// 5, if the polygon is in several quarters
 // Then the program sorts a mas of polygons by their quarters
 #include <stdio.h>
 #include <stdlib.h>
