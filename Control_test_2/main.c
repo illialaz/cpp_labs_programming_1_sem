@@ -8,7 +8,7 @@ struct Gift {
 };
 
 struct Name {
-	char name[15];
+  char name[15];
 };
 
 int gift_num (int x) {
